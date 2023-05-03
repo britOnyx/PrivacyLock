@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/sures/Documents/e-clipse projects/Jar_files/sqlite-jdbc-3.32.3.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sures/Documents/e-clipse projects/Jar_files/activation.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sures/Documents/e-clipse projects/Jar_files/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sures/Documents/e-clipse projects/Jar_files/cryptoutils-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sures/Documents/e-clipse projects/Jar_files/javax.mail.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sures/Documents/e-clipse projects/Jar_files/jsoup-1.13.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
