@@ -178,7 +178,7 @@ public class Singleton {
   
         for (int i = 0; i < length; i++)   
         {  
-        	//gets random characters from 'characters' variable
+        	//gets random characters from 'characters' variable and adds it to the finalval
             finalval.append(characters.charAt(random.nextInt(characters.length())));  
         }  
   
@@ -233,7 +233,9 @@ public class Singleton {
     /* Method to generate the hash value */  
     public byte[] hash(char[] password, byte[] salt)   
     {  
+    	//password, salt, iteration and key length
         PBEKeySpec spec = new PBEKeySpec(password, salt, 10000, 256);  
+        
         Arrays.fill(password, Character.MIN_VALUE);  
         try   
         {  
@@ -255,11 +257,11 @@ public class Singleton {
     {  
         boolean finalval = false;  
                 
-        /* Generate New secure password with the same salt */  
+        /* Generate New secure password with the same salt form the DB*/  
         String newSecurePassword = generateSecurePassword(providedPassword, salt);  
           
         /* Check if two passwords are equal */  
-        finalval = newSecurePassword.equalsIgnoreCase(securedPassword);  
+        finalval = newSecurePassword.equals(securedPassword);  
           
         return finalval;  
     }
